@@ -4,7 +4,7 @@
 
 ### 목차
 * [이전 자료](https://github.com/gerherh/Algorithm/tree/main/%EB%B0%B1%EC%A4%80/PreviousData)
-* 수학
+* [수학]()
 * 구현
 * 다이나믹 프로그래밍
 * 그래프 이론
