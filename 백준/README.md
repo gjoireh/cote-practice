@@ -3,7 +3,7 @@
 ### 진행 : 각 알고리즘별로 하나씩 풀면서 폴더, 파일을 만들어 갑니다.
 
 ### 목차
-* [이전 자료](https://github.com/gerherh/Algorithm/tree/main/%EB%B0%B1%EC%A4%80/PreviousData)
+* [이전 자료](https://github.com/gerherh/Algorithm/tree/main/%EB%B0%B1%EC%A4%80/%EC%9D%B4%EC%A0%84%EC%9E%90%EB%A3%8C)
 * [수학](https://github.com/gerherh/Algorithm/tree/main/%EB%B0%B1%EC%A4%80/%EC%88%98%ED%95%99)
 * 구현
 * 다이나믹 프로그래밍
