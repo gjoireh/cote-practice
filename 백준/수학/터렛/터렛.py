@@ -1,4 +1,5 @@
 import math
+# from math import sqrt, pow
 
 T = int(input())
 line = []
