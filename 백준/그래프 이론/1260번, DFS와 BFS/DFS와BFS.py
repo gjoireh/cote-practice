@@ -19,13 +19,18 @@ for _ in range(M):
 def dfs_stack(adjacent_graph, start_node):
     stack = [start_node]
     visited = []
+
+    # 시작 노드에 연결된 노드가 없는 경우
+    if start_node not in adjacent_graph:
+        visited.append(start_node)
+        return visited
+
     while stack:
         current_node = stack.pop()
+        # 스택에 중복으로 들어간 노드 제거
         if current_node in visited:
             continue
         visited.append(current_node)
-        if current_node not in adjacent_graph:
-            return visited
         for adjacent_node in sorted(adjacent_graph[current_node], reverse=True):
             if adjacent_node not in visited:
                 stack.append(adjacent_node)
@@ -36,13 +41,18 @@ def bfs_queue(adjacent_graph, start_node):
     queue = deque()
     queue.append(start_node)
     visited = []
+
+    # 시작 노드에 연결된 노드가 없는 경우
+    if start_node not in adjacent_graph:
+        visited.append(start_node)
+        return visited
+
     while queue:
         current_node = queue.popleft()
+        # 큐에 중복으로 들어간 노드 제거
         if current_node in visited:
             continue
         visited.append(current_node)
-        if current_node not in adjacent_graph:
-            return visited
         for adjacent_node in sorted(adjacent_graph[current_node]):
             if adjacent_node not in visited:
                 queue.append(adjacent_node)
