@@ -11,7 +11,8 @@
    sys.stdin.readline()
    ```
 
-   
+   </br>
+   </br>
 
 2. BFS에서 큐를 리스트 말고 덱을 사용하도록 한다
 
