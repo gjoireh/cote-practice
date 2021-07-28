@@ -1,7 +1,6 @@
 n = int(input())
 triangle = []
 
-# 삼각형 입력 받고
 for _ in range(n):
     line = list(map(int, input().split()))
     triangle.append(line)
@@ -11,13 +10,10 @@ for line in range(1,n):
     for i in range(len(triangle[line])):
         if i == 0:                                      
             triangle[line][0] += triangle[line-1][0]
-            # 맨 왼쪽자리의 경우 윗줄의 첫번째 값을 더해주면 되고
         elif i == (len(triangle[line])-1):              
             triangle[line][i] += triangle[line-1][i-1]
-            # 맨 오른쪽자리의 경우 윗줄의 맨 오른쪽 값을 더해주면 되고
         else:                                           
             triangle[line][i] += max(triangle[line-1][i - 1], triangle[line-1][i])
-            # 그 외는 윗줄의 왼쪽과 오른쪽중 큰 값을 더해 넣으면 된다.
 print(max(triangle[n-1]))
 
 
