@@ -7,7 +7,6 @@
 * [구현](https://github.com/gerherh/Algorithm/tree/main/%EB%B0%B1%EC%A4%80/%EA%B5%AC%ED%98%84)
 * [다이나믹 프로그래밍](https://github.com/gerherh/Algorithm/tree/main/%EB%B0%B1%EC%A4%80/%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
 * [그래프 이론](https://github.com/gerherh/Algorithm/tree/main/%EB%B0%B1%EC%A4%80/%EA%B7%B8%EB%9E%98%ED%94%84%20%EC%9D%B4%EB%A1%A0)
-* 레벤슈타인 거리
 * [자료 구조](https://github.com/gerherh/Algorithm/tree/main/%EB%B0%B1%EC%A4%80/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0)
 * 문자열
 * 그리디
@@ -177,5 +176,6 @@
 * 탑 트리
 * 베이즈 정리
 * 이산 k제곱근
+* 레벤슈타인 거리
 * [이전 자료](https://github.com/gerherh/Algorithm/tree/main/%EB%B0%B1%EC%A4%80/%EC%9D%B4%EC%A0%84%EC%9E%90%EB%A3%8C)
 
