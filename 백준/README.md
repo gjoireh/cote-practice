@@ -9,7 +9,7 @@
 * [그래프 이론](https://github.com/gerherh/Algorithm/tree/main/%EB%B0%B1%EC%A4%80/%EA%B7%B8%EB%9E%98%ED%94%84%20%EC%9D%B4%EB%A1%A0)
 * [자료 구조](https://github.com/gerherh/Algorithm/tree/main/%EB%B0%B1%EC%A4%80/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0)
 * [문자열](https://github.com/gerherh/Algorithm/tree/main/%EB%B0%B1%EC%A4%80/%EB%AC%B8%EC%9E%90%EC%97%B4)
-* 그리디
+* [그리디]()
 * [그래프 탐색](https://github.com/gerherh/Algorithm/tree/main/%EB%B0%B1%EC%A4%80/%EA%B7%B8%EB%9E%98%ED%94%84%20%ED%83%90%EC%83%89)
 * 브루트포스
 * 정렬
