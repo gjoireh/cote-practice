@@ -76,11 +76,11 @@
 
 ```C++
 for (int i = 1; i <= (s_length / 2); i++)
-	{
-		lengths.push_back(compress(i, s).length());
-	}
-    answer = get_min(lengths);
-    return answer;
+{
+    lengths.push_back(compress(i, s).length());
+}
+answer = get_min(lengths);
+return answer;
 ```
 
 compress는 s를 i 단위로 압축하는 함수, get_min은 최소값 구하는 함수다.
