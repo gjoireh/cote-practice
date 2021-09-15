@@ -15,7 +15,7 @@ int get_min(vector<int> v)
 	return min;
 }
 
-string get_s(int n, string s)
+string compress(int n, string s)
 {
 	string result = "";
 	string repeated = "";
@@ -75,7 +75,7 @@ int solution(string s) {
 
 	for (int i = 1; i <= (s_length / 2); i++)
 	{
-		lengths.push_back(get_s(i, s).length());
+		lengths.push_back(compress(i, s).length());
 	}
 	answer = get_min(lengths);
 	return answer;
