@@ -4,7 +4,7 @@
 
 ### 목차
 * [LV1](https://github.com/gerherh/Algorithm/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/LV1)
-* [LV2]([Algorithm/프로그래머스/LV2 at main · gerherh/Algorithm (github.com)](https://github.com/gerherh/Algorithm/tree/main/프로그래머스/LV2))
+* [LV2](https://github.com/gerherh/Algorithm/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/LV2)
 * [LV3]
 * [LV4]
 * [LV5]
