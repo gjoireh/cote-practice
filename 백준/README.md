@@ -11,13 +11,13 @@
 * [문자열](https://github.com/gerherh/Algorithm/tree/main/%EB%B0%B1%EC%A4%80/%EB%AC%B8%EC%9E%90%EC%97%B4)
 * [그리디](https://github.com/gerherh/Algorithm/tree/main/%EB%B0%B1%EC%A4%80/%EA%B7%B8%EB%A6%AC%EB%94%94)
 * [그래프 탐색](https://github.com/gerherh/Algorithm/tree/main/%EB%B0%B1%EC%A4%80/%EA%B7%B8%EB%9E%98%ED%94%84%20%ED%83%90%EC%83%89)
+* [이분탐색]()
 * 브루트포스
 * 정렬
 * 세그먼트 트리
 * 트리
 * 기하학
 * 정수론
-* 이분 탐색
 * 너비 우선 탐색
 * 사칙연산
 * 조합론
@@ -177,5 +177,3 @@
 * 베이즈 정리
 * 이산 k제곱근
 * 레벤슈타인 거리
-* [이전 자료](https://github.com/gerherh/Algorithm/tree/main/%EB%B0%B1%EC%A4%80/%EC%9D%B4%EC%A0%84%EC%9E%90%EB%A3%8C)
-
