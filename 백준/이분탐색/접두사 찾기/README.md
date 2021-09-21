@@ -107,7 +107,7 @@ S[mid]가 문자열 M보다 크다면 문자열 M이 접두사가 될 수 있는
 
 </br>
 
-그리고 c의 qsort에서 문자열을 정렬의 compare에서 아래와 같은 확인 사항이 있다.
+그리고 c의 qsort의 compare에서 아래와 같은 확인 사항이 있다. (문자열들간의 정렬)
 
 ```c
 int compare_arr(const void* arg1, const void* arg2)
