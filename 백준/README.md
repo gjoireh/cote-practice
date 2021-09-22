@@ -1,6 +1,6 @@
 ## 백준
 
-### 진행 : 각 알고리즘별로 풉니다.
+### 진행 : 알고리즘별로 풉니다.
 
 ### 목차
 * [수학](https://github.com/gerherh/Algorithm/tree/main/%EB%B0%B1%EC%A4%80/%EC%88%98%ED%95%99)
