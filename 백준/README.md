@@ -10,7 +10,7 @@
 * [그리디](https://github.com/gerherh/Algorithm/tree/main/%EB%B0%B1%EC%A4%80/%EA%B7%B8%EB%A6%AC%EB%94%94)
 * [그래프 탐색](https://github.com/gerherh/Algorithm/tree/main/%EB%B0%B1%EC%A4%80/%EA%B7%B8%EB%9E%98%ED%94%84%20%ED%83%90%EC%83%89)
 * [이분탐색](https://github.com/gerherh/Coding-Test-Practice/tree/main/%EB%B0%B1%EC%A4%80/%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89)
-* [브루트포스]()
+* [브루트포스](https://github.com/gerherh/Coding-Test-Practice/tree/main/%EB%B0%B1%EC%A4%80/%EB%B8%8C%EB%A3%A8%ED%8A%B8%20%ED%8F%AC%EC%8A%A4)
 * 정렬
 * 세그먼트 트리
 * 트리
