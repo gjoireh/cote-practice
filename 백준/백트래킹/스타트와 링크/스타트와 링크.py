@@ -7,7 +7,7 @@ team2 = []
 diffs = []
 
 
-def back_tracking(t1, t2):
+def stop(t1, t2):
     if len(t1) > N // 2 or len(t2) > N // 2:
         return True
     return False
@@ -34,7 +34,7 @@ def make_team(index, t1, t2):
         else:
             return False
 
-    if back_tracking(t1, t2):
+    if stop(t1, t2):
         return False
 
     t1.append(index)
@@ -46,6 +46,7 @@ def make_team(index, t1, t2):
     if make_team(index + 1, t1, t2):
         save_diff(t1, t2)
     t2.pop()
+    return False
 
 
 if __name__ == "__main__":

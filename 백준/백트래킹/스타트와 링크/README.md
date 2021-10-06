@@ -157,3 +157,83 @@ N명을 일렬로 쭉 세워놨다고 할때
 </br>
 
 그리고 문제의 답은 재귀함수에서 팀이 만들어 질때마다 두 팀의 능력치 차를 구했기 때문에 그 중에 최소를 출력하면 된다.
+
+</br>
+
+</br>
+
+그런데 한가지 확인할만한 사항이 있었다.
+
+```python
+def make_team(index, t1, t2):
+    if index == N:
+        if len(t1) == N // 2 and len(t2) == N // 2:
+            return True
+        else:
+            return False
+
+    if stop(t1, t2):
+        return False
+
+    t1.append(index)
+    if make_team(index + 1, t1, t2):
+        save_diff(t1, t2)
+    t1.pop()
+
+    t2.append(index)
+    if make_team(index + 1, t1, t2):
+        save_diff(t1, t2)
+    t2.pop()
+```
+
+python에서는 make_team() 함수에서 index == N인 경우에만 반환값이 있어도
+
+```python
+if make_team(index + 1, t1, t2):
+        save_diff(t1, t2)
+```
+
+
+
+이런 식으로 재귀호출 할 때 문제 되는 것이 없다. 의도한 대로 오직 팀이 N / 2, N / 2 명씩 구성 됐을때만 팀의 능력치 차이를 계산한다.
+
+그런데 
+
+```c++
+bool make_team(int index, vector<int>& t1, vector<int>& t2)
+{
+	if (index == N)
+	{
+		if (t1.size() == N / 2 and t2.size() == N / 2)return true;
+		else return false;
+	}
+
+	if (stop(t1, t2))return false;
+
+	t1.push_back(index);
+	if (make_team(index + 1, t1, t2))get_diff(t1, t2);
+	t1.pop_back();
+
+	t2.push_back(index);
+	if (make_team(index + 1, t1, t2))get_diff(t1, t2);
+	t2.pop_back();
+
+	return false;
+}
+```
+
+C++에서는 아무런 반환값이 없는 경우를 true 반환으로 정하는 것 같다.
+
+그래서 index == N 이외의 경우에
+
+```c++
+return false
+```
+
+를 해주지 않으면
+
+```C++
+if (make_team(index + 1, t1, t2))get_diff(t1, t2);
+```
+
+같은 부분에서 의도한대로 동작하지 않는다.
