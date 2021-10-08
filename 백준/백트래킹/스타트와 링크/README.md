@@ -232,6 +232,15 @@ if (make_team(index + 1, t1, t2))get_diff(t1, t2);
 index == N 외의 경우에도 당연히 반환값을 지정해 줘야 할 것이다.
 
 ```c++
-...
-return false
+bool make_team(int index, vector<int>& t1, vector<int>& t2)
+{
+	if (index == N)
+	{
+		if (t1.size() == N / 2 and t2.size() == N / 2)return true;
+		else return false;
+	}
+	
+	...
+	
+	return false
 ```
