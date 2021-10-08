@@ -218,23 +218,27 @@ bool make_team(int index, vector<int>& t1, vector<int>& t2)
 	if (make_team(index + 1, t1, t2))get_diff(t1, t2);
 	t2.pop_back();
 
-	return false;
 }
 ```
 
-C++에서는 아무런 반환값이 없는 경우를 true 반환으로 정하는 것 같다.(확인해본 아무런 반환값이 없다면 기본적으로 1을 반환하는 것 같다.)
-
-그래서 index == N 이외의 경우에
-
-```c++
-return false
-```
-
-를 해주지 않으면
+C++에서는 문제가 된다. 여기서 index가 N이 아닌 경우에는 반환값이 없다.
+이때 무언가 false가 아닌 것이 나와서 팀이 완성되었는지 확인하는 부분에서 완성된 것으로 판단하고 그 후로 넘어간다.
+(index == N 이고 t1.size() == N / 2 and t2.size() == N / 2일때가 팀이 완성된 때인데 이 외에도 항상 1이나오므로 팀이 완성된 때를 구분하지 못하게 된다)  
 
 ```C++
 if (make_team(index + 1, t1, t2))get_diff(t1, t2);
 ```
+  
+함수에서 반환 값을 정했고 index == N 외의 경우에 반환값이 없으니
+index == N 외의 경우에도 당연히 반환값을 지정해 줘야 할 것이다.
+
+```c++
+...
+return false
+```
+
+
+
 
 같은 부분에서 의도한대로 동작하지 않는다.
-(index == N 이고 t1.size() == N / 2 and t2.size() == N / 2일때가 팀이 완성된 때인데 이 외에도 항상 1이나오므로 팀이 완성된 때를 구분하지 못하게 된다)
+
