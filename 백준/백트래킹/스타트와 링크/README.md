@@ -243,4 +243,5 @@ bool make_team(int index, vector<int>& t1, vector<int>& t2)
 	...
 	
 	return false
+}
 ```
