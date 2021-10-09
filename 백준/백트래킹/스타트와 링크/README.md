@@ -186,16 +186,14 @@ def make_team(index, t1, t2):
     t2.pop()
 ```
 
-python에서는 make_team() 함수에서 index == N인 경우에만 반환값이 있어도
+초기에 make_team() 함수에서 index == N, stop(t1, t2) == True를 제외한 경우들에서 반환값이 없었다.
+이것이 python에서는 문제가 없었다. 
 
 ```python
 if make_team(index + 1, t1, t2):
         save_diff(t1, t2)
 ```
-
-
-
-이런 식으로 재귀호출 할 때 문제 되는 것이 없다. 의도한 대로 오직 팀이 N / 2, N / 2 명씩 구성 됐을때만 팀의 능력치 차이를 계산한다.
+의도한 대로 오직 팀이 N / 2, N / 2 명씩 구성 됐을때만 팀의 능력치 차이를 계산한다.  
 
 그런데 
 
@@ -221,15 +219,15 @@ bool make_team(int index, vector<int>& t1, vector<int>& t2)
 }
 ```
 
-C++에서는 문제가 된다. 여기서 index가 N이 아닌 경우에는 반환값이 없다.  
-이때 무언가 false가 아닌 것이 나와서 팀이 완성되었는지 확인하는 부분에서 완성된 것으로 판단하고 그 후로 넘어간다.  
+C++에서는 문제가 된다.index == N, stop(t1, t2) == True를 제외한 경우들, 반환값이 없는 상황들에서
+무언가 false가 아닌 것이 나와서 팀이 완성되었는지 확인하는 부분에서 완성된 것으로 판단하고 그 후로 넘어간다.  
 
 ```C++
 if (make_team(index + 1, t1, t2))get_diff(t1, t2);
 ```
   
-함수에서 반환 값을 정했고 index == N 외의 경우에 반환값이 없으니  
-index == N 외의 경우에도 당연히 반환값을 지정해 줘야 할 것이다.
+함수에서 반환 값을 정했고 index == N , stop == true 외의 경우에 반환값이 없으니  
+그 상황들에도 당연히 반환값을 지정해 줘야 할 것이다.
 
 ```c++
 bool make_team(int index, vector<int>& t1, vector<int>& t2)
