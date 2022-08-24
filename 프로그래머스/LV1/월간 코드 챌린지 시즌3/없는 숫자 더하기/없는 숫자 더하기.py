@@ -1,5 +1,3 @@
 def solution(numbers):
-    answer = 45
-    for n in numbers:
-        answer -= n
+    answer = 45 - sum(numbers)
     return answer
