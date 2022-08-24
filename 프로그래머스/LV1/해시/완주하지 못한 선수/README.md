@@ -46,5 +46,23 @@ python의 딕셔너리가 그러한 구조고
 이것을 사용하면 시간복잡도 문제가 없다  
 
 중복되는 동명 이인이 있을 수 있기에 set은 적절하지 않다  
+  
+***
+다른 사람의 풀이를 보다가 한가지 기록해둘만한 것을 봤다  
+```python
+import collections
+
+
+def solution(participant, completion):
+    answer = collections.Counter(participant) - collections.Counter(completion)
+    return list(answer.keys())[0]
+``` 
+collections 라이브러리다  
+이것을 사용하면  
+딕셔너리에서 각 key별로 몇개씩 있는지 확인한 작업을  
+collections.Counter() 함수를 이용해서 수행할 수 있다  
+결과물끼리의 뺄셈 등 연산도 가능하다
+
+
 
 
