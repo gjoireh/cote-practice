@@ -15,7 +15,6 @@ def is_prime_number(x):
 def go(j, cnt, n, m, nums):
     global answer
     if cnt == m:
-        print(used)
         if is_prime_number(sum(used)):
             answer += 1
         return
@@ -31,7 +30,6 @@ def go(j, cnt, n, m, nums):
 # def go(cnt, n, m, nums):
 #     global answer
 #     if cnt == m:
-#         print(used)
 #         if is_prime_number(sum(used)):
 #             answer += 1
 #         return
