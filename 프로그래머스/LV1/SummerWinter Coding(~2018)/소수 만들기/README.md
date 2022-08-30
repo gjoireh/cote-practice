@@ -73,6 +73,7 @@ N과 M이라는 문제에서 N개중 M개를 뽑는 작업을 재귀함수로 �
 ```
 숫자를 탐색할때 다음에 탐색할 범위를 현재 인덱스 다음부터 끝까지로 제한해야 조합이 된다  
 ```python
+# combination
 def go(j, cnt, n, m, nums):
     global answer
     if cnt == m:
