@@ -20,8 +20,6 @@ def go(j, cnt, n, m, nums):
         return
 
     for i in range(j, n):
-        if nums[i] in used:
-            continue
         used.add(nums[i])
         go(i+1, cnt + 1, n, m, nums)
         used.remove(nums[i])
