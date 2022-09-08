@@ -17,6 +17,3 @@ def solution(s):
         s = s.replace(numbers[i], number_word_dic[numbers[i]])
     answer = int(s)
     return answer
-
-
-print(solution("one4seveneight"))
