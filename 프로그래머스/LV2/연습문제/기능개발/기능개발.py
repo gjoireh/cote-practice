@@ -9,12 +9,12 @@ def solution(progresses, speeds):
     answer = []
 
     idx = 0
-    len_of_progresses = len(progresses)
+    len_of_prog = len(progresses)
 
-    while idx < len_of_progresses:
+    while idx < len_of_prog:
         required_days = get_required_days(progresses[idx], speeds[idx])
         items = 1
-        for i in range(idx+1, len_of_progresses):
+        for i in range(idx+1, len_of_prog):
             trd = get_required_days(progresses[i], speeds[i])
             if trd <= required_days:
                 items += 1
