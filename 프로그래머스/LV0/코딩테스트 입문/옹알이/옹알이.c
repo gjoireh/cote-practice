@@ -12,7 +12,7 @@ int get_len(char* b)
     return i;
 }
 
-bool impossible_pronounce(char* b)
+bool impossible_pronounce2(char* b)
 {
     char* words[4] = { "aya", "ye", "woo", "ma" };
     int lens[4] = { 3,2,3,2 };
@@ -50,7 +50,7 @@ bool impossible_pronounce(char* b)
 
 }
 
-bool same_continuos(char* b)
+bool impossible_pronounce1(char* b)
 {
     char* sc[4] = { "ayaaya", "yeye", "woowoo", "mama" };
     int sc_len[4] = { 6,4,6,4 };
@@ -76,9 +76,9 @@ int solution(const char* babbling[], size_t babbling_len)
 
     for (int i = 0; i < babbling_len; i++)
     {
-        if (same_continuos(babs[i]))
+        if (impossible_pronounce1(babs[i]))
             continue;
-        if (impossible_pronounce(babs[i]))
+        if (impossible_pronounce2(babs[i]))
             continue;
         answer++;
     }
