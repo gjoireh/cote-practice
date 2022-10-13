@@ -5,7 +5,7 @@
 
 int solution(int a, int b)
 {
-    return fmod((float)a/(float)b * 1000, 1) == 0 ? 1 : 2; //  fmod : c에서의 나머지 연산
+    return fmod((float)a/(float)b * 1000, 1) == 0 ? 1 : 2; //  fmod : c 실수 에서의 나머지 연산
 }
 
 // #include <stdio.h>
