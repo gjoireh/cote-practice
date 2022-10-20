@@ -68,11 +68,11 @@ qsor의 compare
 ```C
 int compare(const void* p1, const void* p2)
 {
-    return *p1 - *p2; // 내림차순
+    return *p1 - *p2; // 오름차순
 }
 int compare(const void* p1, const void* p2)
 {
-    return *p2 - *p1; // 오름차순
+    return *p2 - *p1; // 내림차순
 }
 ```
 
