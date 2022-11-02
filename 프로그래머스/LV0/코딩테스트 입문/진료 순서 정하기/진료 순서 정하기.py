@@ -1,6 +1,5 @@
 def solution(emergency):
-    e = sorted(emergency,reverse=True)
-    return [e.index(i)+1 for i in emergency]
+    return [sorted(emergency,reverse=True).index(i)+1 for i in emergency]
 
 # def solution(e):
 #     emdict = dict.fromkeys(e,0)
