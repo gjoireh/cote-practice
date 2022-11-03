@@ -8,5 +8,3 @@ morse = {
 
 def solution(letter):
     return "".join([morse[c] for c in letter.split(' ')])
-
-print(solution(".... . .-.. .-.. ---"))
