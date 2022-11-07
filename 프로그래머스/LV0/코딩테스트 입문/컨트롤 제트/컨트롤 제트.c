@@ -81,7 +81,7 @@ SL split(const char* s, char* c)
     char** sp = (char*)malloc(sizeof(char*) * MAX);
     char* p;
 
-    for (int i = 0; i < 500; i++)
+    for (int i = 0; i < MAX; i++)
     {
         sp[i] = (char*)malloc(5);
         memset(sp[i], 0, 5);
