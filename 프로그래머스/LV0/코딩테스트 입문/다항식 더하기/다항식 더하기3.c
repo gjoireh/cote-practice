@@ -15,13 +15,12 @@ char* solution(const char* polynomial)
 {
     int x = 0, n = 0;
     SL sl = split(polynomial, " + ", strlen(polynomial), strlen(" + "));
-    char* p;
     char* answer = malloc(strlen(polynomial));
     char* t = malloc(strlen(polynomial));
 
     for (int i = 0; i < sl.len; i++)
     {
-        if (p = strstr(sl.splitted[i], "x"))
+        if (strstr(sl.splitted[i], "x"))
         {
             if (sl.splitted[i][0] == 'x') x++;
             else
