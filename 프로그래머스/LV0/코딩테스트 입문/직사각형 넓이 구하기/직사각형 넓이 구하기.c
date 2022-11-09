@@ -3,7 +3,9 @@
 #include <stdlib.h>
 int compare(const int** p1, const int** p2)
 {
-    return **p1 - **p2;
+    if((*p1)[0] != (*p2)[0])return (*p1)[0] - (*p2)[0];
+    
+    return (*p1)[1] - (*p2)[1];
 }
 
 // dots_rows는 2차원 배열 dots의 행 길이, dots_cols는 2차원 배열 dots의 열 길이입니다.
