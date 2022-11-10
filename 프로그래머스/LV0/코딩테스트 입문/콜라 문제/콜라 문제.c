@@ -4,10 +4,5 @@
 
 int solution(int a, int b, int n) 
 {
-    int x = 1;
-    while((n - a) / (a - b) >= x)
-    {
-        x++;
-    }
-    return x * b;
+    return ((n - a) / (a - b) + 1) * b;
 }
