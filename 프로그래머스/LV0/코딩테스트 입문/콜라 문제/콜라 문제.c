@@ -5,7 +5,7 @@
 int solution(int a, int b, int n) 
 {
     int x = 1;
-    while(n - (a-b)*x >= a)
+    while((n - a) / (a - b) >= x)
     {
         x++;
     }
