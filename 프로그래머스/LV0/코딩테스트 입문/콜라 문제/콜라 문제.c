@@ -2,6 +2,12 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-int solution(int a, int b, int n) {
-    return (n-b) / (a-b) * b;
+int solution(int a, int b, int n) 
+{
+    int x = 1;
+    while(n - (a-b)*x >= a)
+    {
+        x++;
+    }
+    return x * b;
 }
