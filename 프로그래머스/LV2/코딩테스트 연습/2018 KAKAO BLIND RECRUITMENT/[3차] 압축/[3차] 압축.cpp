@@ -36,7 +36,7 @@ vector<int> solution(string msg)
                 }
                 wc = w + msg[c_pos];
                 lzw[wc] = index++;
-                w_pos += w_len;
+                w_pos = c_pos;
                 if(wc.length() > max_len) max_len = wc.length();
                 break;
             }
