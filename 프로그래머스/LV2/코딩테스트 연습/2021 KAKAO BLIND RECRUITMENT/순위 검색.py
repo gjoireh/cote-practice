@@ -13,7 +13,7 @@ def solution(info, query):
     all_querys = dict()
     src = [['cpp', 'java', 'python', '-'], ['frontend', 'backend', '-'], ['junior', 'senior', '-'], ['chicken', 'pizza', '-']]
     infos = [["".join(info[:-1]), int(info[-1])] for info in [data.split(' ') for data in info]]
-    querys = [[query[0], int(query[-1])] for query in [data.replace(" and ", '').split(" ") for data in query]]
+    querys = [[query[0], int(query[1])] for query in [data.replace(" and ", '').split(" ") for data in query]]
 
     get_all_querys(src, 0, "", all_querys)
 
@@ -23,7 +23,7 @@ def solution(info, query):
                 if v not in info[0]:break
             else:all_querys[k].append(info[1])
 
-    for k,v in all_querys.items():
+    for k,_ in all_querys.items():
         all_querys[k].sort()
     
     for query in querys:
