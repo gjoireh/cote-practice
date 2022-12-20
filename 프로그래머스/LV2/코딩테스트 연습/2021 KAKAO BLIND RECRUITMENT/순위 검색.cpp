@@ -6,12 +6,13 @@
 
 using namespace std;
 
+const string ALL = "-";
 unordered_map<string, vector<int>> all_queries_derived_from_info;
 
 void get_all_queries_derived_from_info(string* input_info, int all_mask, int score) {
     string q = "";
     for (int i = 0; i < 4; i++)
-        q += (all_mask & (1 << i)) ? "-" : input_info[i];
+        q += (all_mask & (1 << i)) ? ALL : input_info[i];
     all_queries_derived_from_info[q].push_back(score);
 }
 
