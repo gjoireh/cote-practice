@@ -27,7 +27,7 @@ vector<int> solution(vector<string> info, vector<string> query) {
         for (int i = 0; i < 16; i++) get_all_queries_derived_from_info(input_info, i, score);
     }
 
-    for (auto& scores : all_queries_derived_from_info) sort(scores.second.begin(), scores.second.end());
+    for (auto& aqdfi : all_queries_derived_from_info) sort(aqdfi.second.begin(), aqdfi.second.end());
 
     for (auto& que : query) {
         istringstream iss(que);
